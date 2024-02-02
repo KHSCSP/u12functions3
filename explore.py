@@ -1,7 +1,23 @@
+def full_info(name, age):
+    print(name, "is", age, "years old.")
+
+# call using positional arguments
+full_info("jo", 42)
+# wrong order not ok!
+full_info(11, "no")
+
+
+# call using keyword arguments
+full_info(name="bo", age=13)
+# wrong order OK!
+full_info(age=18, name="mo")
+
+
+
 
 def describe_pet(pet_name, animal_type='dog'):
-  print("I have a", animal_type)
-  print("Its name is", pet_name)
+    print("I have a", animal_type)
+    print("Its name is", pet_name)
 
 # this will use the 'default' second parameter
 describe_pet("December")
